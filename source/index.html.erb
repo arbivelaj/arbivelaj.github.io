@@ -1,0 +1,77 @@
+<%= partial "navbar" %>
+<header>
+    <section class="main-section">
+        <%= partial "fixed_navbar" %>
+        <div class="left-header">
+            <h1 class="main-title">Change your life,<br> learn to react</h1>
+            <div class="main-subtitle">
+                <p>Le Wagon is an intensive 9-week coding bootcamp that teaches you how to code great tech products.</p>
+                <a class="cta cta-big cta-secondary margin-top-cta-secondary" href="#">Apply now</a></br>
+                <a class="cta cta-big cta-primary" href="#">Discover more</a>
+            </div>
+        </div>
+        <div class="right-header">
+        </div>
+    </section>
+</header>
+<section class="section-logos">
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            <%= image_tag 'es6_logo.png', class:"img-section",
+            data: { aos: "fade-in-down",
+                  "aos-offset": 200,
+                  "aos-delay": 0,
+                  "aos-duration": 1000,
+                  "aos-easing": "linear",
+                  # "aos-mirror": true,
+                  "aos-once": true,
+              } %>
+            <p class="logos-title">
+                Javascript ES6
+            </p>
+            <p class="logos-description">
+                Durante i corsi sfrutteremo tutte le potenzialità della versione più moderna di JavaScript.
+            </p>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <%= image_tag 'react_logo.png', class:"img-section",
+            data: { aos: "fade-in-down",
+                  "aos-offset": 200,
+                  "aos-delay": 400,
+                  "aos-duration": 1000,
+                  "aos-easing": "linear",
+                  # "aos-mirror": true,
+                  "aos-once": true,
+                  } %>
+            <p class="logos-title">
+                React JS
+            </p>
+            <p class="logos-description">
+                React è oggi la migliore tecnologia disponibile per lo sviluppo della user interface delle applicazioni web.
+            </p>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <%= image_tag 'redux_logo.png', class:"img-section",
+            data: { aos: "fade-in-down",
+                  "aos-offset": 200,
+                  "aos-delay": 800,
+                  "aos-duration": 1000,
+                  "aos-easing": "linear",
+                  # "aos-mirror": true,
+                  "aos-once": true,
+                  } %>
+            <p class="logos-title">
+                Redux
+            </p>
+            <p class="logos-description">
+                Redux consente di gestire in modo unitario e predicibile lo stato di applicazioni web complesse.
+            </p>
+        </div>
+    </div>
+    <!-- </div> -->
+</section>
+<!-- outline -->
+<section class="outline">
+  <%= partial "outline" %>
+</section>

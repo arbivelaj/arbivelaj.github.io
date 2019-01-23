@@ -20,17 +20,18 @@ nav.fixed-navbar {
   width: 100%;
   z-index: 1;
   transition: all 0.5s;
+  font-family: "Graphik-Regular";
   // margin-bottom: 30px;
   // margin: 0 6% 0 6%;
 
 
 }
+
 nav.fixed-navbar.scrollUp {
   transform: translateY(-80px);
 
 }
 nav.fixed-navbar ul.navbar-menu {
-
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -41,7 +42,7 @@ nav.fixed-navbar ul.navbar-menu li {
   margin: 0 10px;
 }
 nav.fixed-navbar ul.navbar-menu li a {
-  color: black;
+  color: white;
   font-size: 14px;
 }
 nav.fixed-navbar a#brand {

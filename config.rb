@@ -4,7 +4,7 @@ end
 
 activate :sprockets
 activate :aria_current
-activate :relative_assets
+# activate :relative_assets
 
 set :fonts_dir, 'fonts'
 

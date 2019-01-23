@@ -1,77 +1,63 @@
-<%= partial "navbar" %>
-<header>
-    <section class="main-section">
-        <%= partial "fixed_navbar" %>
-        <div class="left-header">
-            <h1 class="main-title">Change your life,<br> learn to react</h1>
-            <div class="main-subtitle">
-                <p>Le Wagon is an intensive 9-week coding bootcamp that teaches you how to code great tech products.</p>
-                <a class="cta cta-big cta-secondary margin-top-cta-secondary" href="#">Apply now</a></br>
-                <a class="cta cta-big cta-primary" href="#">Discover more</a>
-            </div>
-        </div>
-        <div class="right-header">
-        </div>
-    </section>
-</header>
-<section class="section-logos">
-    <!-- <div class="container"> -->
-    <div class="row">
-        <div class="col-lg-4 col-xs-12">
-            <%= image_tag 'es6_logo.png', class:"img-section",
-            data: { aos: "fade-in-down",
-                  "aos-offset": 200,
-                  "aos-delay": 0,
-                  "aos-duration": 1000,
-                  "aos-easing": "linear",
-                  # "aos-mirror": true,
-                  "aos-once": true,
-              } %>
-            <p class="logos-title">
-                Javascript ES6
-            </p>
-            <p class="logos-description">
-                Durante i corsi sfrutteremo tutte le potenzialità della versione più moderna di JavaScript.
-            </p>
-        </div>
-        <div class="col-lg-4 col-xs-12">
-            <%= image_tag 'react_logo.png', class:"img-section",
-            data: { aos: "fade-in-down",
-                  "aos-offset": 200,
-                  "aos-delay": 400,
-                  "aos-duration": 1000,
-                  "aos-easing": "linear",
-                  # "aos-mirror": true,
-                  "aos-once": true,
-                  } %>
-            <p class="logos-title">
-                React JS
-            </p>
-            <p class="logos-description">
-                React è oggi la migliore tecnologia disponibile per lo sviluppo della user interface delle applicazioni web.
-            </p>
-        </div>
-        <div class="col-lg-4 col-xs-12">
-            <%= image_tag 'redux_logo.png', class:"img-section",
-            data: { aos: "fade-in-down",
-                  "aos-offset": 200,
-                  "aos-delay": 800,
-                  "aos-duration": 1000,
-                  "aos-easing": "linear",
-                  # "aos-mirror": true,
-                  "aos-once": true,
-                  } %>
-            <p class="logos-title">
-                Redux
-            </p>
-            <p class="logos-description">
-                Redux consente di gestire in modo unitario e predicibile lo stato di applicazioni web complesse.
-            </p>
-        </div>
+<%= partial "fixed_navbar" %>
+<div class="row landing-sec">
+  <div class="col-xs-12 col-md-6 left-text">
+    <div class="left-header">
+      <h1 class="main-title">Digital Literacy<br>Le Wagon <i class="highlighted highlighted-red">Milano</i></h1>
+      <div class="main-subtitle">
+        <p>Sviluppa tech skills essenziali nel job market,
+        scopri lo UX/UI Design, Web Development, API, Database e molto altro.</p>
+        <a class="cta cta-big cta-secondary margin-top-cta-secondary" href="#">Iscriviti Ora</a></br>
+        <a class="cta cta-big cta-primary" href="#">Scopri di più</a>
+      </div>
     </div>
-    <!-- </div> -->
+
+  </div>
+  <div class="col-xs-12 col-md-6 right-pic pic" style="background-image: url(<%= image_path 'right-front.jpg'%>);">
+
+  </div>
+</div>
+
+<section>
+  <div class="row second-section">
+    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 40px;">Digital Literacy:</i>                          i nostri corsi</p>
+    <div class="col-xs-12 col-sm-4 full-height">
+      <div class="card-main">
+        <div class="pic-course pic " style="background-image: url(<%= image_path 'web-dev.jpg'%>);">
+          <p class="card-title-second-section">Web Development</p>
+        </div>
+        <span class="underline"></span>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 full-height">
+      <div class="card-main">
+        <div class="pic-course pic " style="background-image: url(<%= image_path 'Api.jpg'%>);">
+        </div>
+        <p class="card-title-second-section">API</p>
+        <!-- <span class="underline"></span> -->
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 full-height">
+      <div class="card-main">
+        <div class="pic-course pic " style="background-image: url(<%= image_path 'prod-sprint.jpg'%>);">
+          <p class="card-title-second-section">Product Sprint</p>
+        </div>
+        <!-- <span class="underline"></span> -->
+      </div>
+    </div>
+  </div>
+
 </section>
-<!-- outline -->
-<section class="outline">
-  <%= partial "outline" %>
+
+
+<section>
+  <div class="row third-section">
+    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 40px; color: black;">Web Development</i></p>
+    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
+
+    </div>
+  </div>
 </section>
+
+
+
+

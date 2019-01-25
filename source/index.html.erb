@@ -61,7 +61,9 @@
 
 <section>
   <div class="row fourth-section">
-    <div class="col-xs-12 col-md-6 pic left-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+    <div  class="col-xs-12 col-md-6 right-section-pic-container">
+    <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+    </div>
     </div>
     <div class="col-xs-12 col-sm-6 right-text">
       <p class="header-courses-section" style="font-size: 50px">Impara con i <i class="highlighted highlighted-red" style="font-size: 50px; color: black;">migliori</i></p>
@@ -71,11 +73,101 @@
   </div>
 </section>
 
-<section>
-  <div class="row fifth-section">
 
+<section>
+  <div class="row sixth-section">
+    <div class="col-xs-12 col-sm-6 right-text">
+      <p class="header-courses-section" style="font-size: 50px">Crea <i class="highlighted highlighted-red" style="font-size: 50px; color: black;">Digital Products</i></p>
+      <p class="fourth-section-paragraph">Sviluppa tech skills essenziali nel job market,
+      scopri lo UX/UI Design, Web Development, API, Database e molto altro. Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.</p>
+    </div>
+    <div  class="col-xs-12 col-md-6 right-section-pic-container">
+    <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+    </div>
+    </div>
   </div>
 </section>
+
+<div>
+  <div id="carousel-1" class="carousel slide multi-item-carousel" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-1" data-slide-to="1"></li>
+      <li data-target="#carousel-1" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="item__third">
+          <img src="//placehold.it/900x300/c69/f9c/?text=1" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__third">
+          <img src="//placehold.it/900x300/9c6/cf9/?text=2" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__third">
+          <img src="//placehold.it/900x300/69c/9cf/?text=3" alt="">
+        </div>
+      </div>
+    </div>
+    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+  </div>
+  </div>
+<section>
+
+  <div class="parallax">
+    <div class="row fifth-section">
+      <div class="col-xs-12 col-md-6 prices-cards">
+        <div class="price-card">
+          <div class="content">
+            <div class="front">
+              1 Day Sprint
+            </div>
+            <div class="back">
+              150 €
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 prices-cards">
+        <div class="price-card">
+          <div class="content">
+            <div class="front">
+              3 Days Program
+            </div>
+            <div class="back">
+              350 €
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url(<%= image_path 'parallax-pic.jpg'%>);
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+
+
+
 
 
 

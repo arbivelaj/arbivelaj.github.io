@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 .landing-sec {
   min-height: 86vh;
   width: 100vw;
@@ -19,6 +23,15 @@
   height: calc(86vh + 80px);
   right: 0;
 }
+
+.right-section-pic-container {
+  padding: 10vh 6vw;
+}
+.right-section-pic {
+  height: 100%;
+  width: 100%;
+}
+
 
 .full-height {
   height: 100%;
@@ -103,7 +116,7 @@ span.underline {
 
 
 .third-section {
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -129,3 +142,96 @@ span.underline {
   height: 90vh;
   position: relative;
 }
+
+.prices-cards {
+  position: relative;
+}
+
+
+.price-card {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  width: 40vw;
+  height: 50vh;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.price-card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+.sixth-section {
+  height: 70vh;
+  position: relative;
+}
+
+
+// carousel
+.multi-item-carousel {
+  overflow: hidden;
+}
+.multi-item-carousel img {
+  height: auto;
+  width: 100%;
+}
+.multi-item-carousel .carousel-control.left,
+.multi-item-carousel .carousel-control.right {
+    background: rgba(255, 255, 255, 0.3);
+    width: 25%;
+}
+.multi-item-carousel .carousel-inner {
+  width: 150%;
+  left: -25%;
+}
+.carousel-inner > .item.next,
+.carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+}
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+}
+.item__third {
+  float: left;
+  width: 33.33333333%;
+}
+
+

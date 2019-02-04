@@ -10,7 +10,6 @@
         <%= current_page.data.title %>
     </title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -18,6 +17,7 @@
 <body>
     <%= partial "navbar" %>
     <%= yield %>
+    <%= javascript_include_tag "application" %>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();

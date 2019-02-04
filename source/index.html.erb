@@ -22,26 +22,26 @@
     <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px;">Digital Literacy:</i>                          i nostri corsi</p>
     <div class="col-xs-12 col-sm-4 full-height">
       <div class="card-main">
-        <div class="pic-course pic " style="background-image: url(<%= image_path 'web-dev.jpg'%>);">
+        <div class="pic-course pic card-main1" style="background-image: url(<%= image_path 'web-dev.jpg'%>);">
           <p class="card-title-second-section">Web Development</p>
         </div>
-        <span class="underline"></span>
+        <span class="underline display-none displayed"></span>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 full-height">
       <div class="card-main">
-        <div class="pic-course pic " style="background-image: url(<%= image_path 'Api.jpg'%>);">
-        </div>
+        <div class="pic-course pic card-main2" style="background-image: url(<%= image_path 'Api.jpg'%>);">
         <p class="card-title-second-section">API</p>
-        <!-- <span class="underline"></span> -->
+        </div>
+        <span class="underline display-none"></span>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 full-height">
       <div class="card-main">
-        <div class="pic-course pic " style="background-image: url(<%= image_path 'prod-sprint.jpg'%>);">
+        <div class="pic-course pic card-main3" style="background-image: url(<%= image_path 'prod-sprint.jpg'%>);">
           <p class="card-title-second-section">Product Sprint</p>
         </div>
-        <!-- <span class="underline"></span> -->
+        <span class="underline display-none"></span>
       </div>
     </div>
   </div>
@@ -50,8 +50,22 @@
 
 
 <section>
-  <div class="row third-section">
+  <div class="Web row third-section course1 display-none displayed">
     <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">Web Development</i></p>
+    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
+
+    </div>
+  </div>
+
+  <div class="API row third-section display-none">
+    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">API</i></p>
+    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
+
+    </div>
+  </div>
+
+  <div class="Product row third-section display-none">
+    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">Product Sprint</i></p>
     <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
 
     </div>
@@ -62,8 +76,8 @@
 <section>
   <div class="row fourth-section">
     <div  class="col-xs-12 col-md-6 right-section-pic-container">
-    <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
-    </div>
+      <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+      </div>
     </div>
     <div class="col-xs-12 col-sm-6 right-text">
       <p class="header-courses-section" style="font-size: 50px">Impara con i <i class="highlighted highlighted-red" style="font-size: 50px; color: black;">migliori</i></p>
@@ -82,42 +96,13 @@
       scopri lo UX/UI Design, Web Development, API, Database e molto altro. Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.</p>
     </div>
     <div  class="col-xs-12 col-md-6 right-section-pic-container">
-    <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
-    </div>
+      <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+      </div>
     </div>
   </div>
 </section>
 
-<div>
-  <div id="carousel-1" class="carousel slide multi-item-carousel" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-1" data-slide-to="1"></li>
-      <li data-target="#carousel-1" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="item__third">
-          <img src="//placehold.it/900x300/c69/f9c/?text=1" alt="">
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__third">
-          <img src="//placehold.it/900x300/9c6/cf9/?text=2" alt="">
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__third">
-          <img src="//placehold.it/900x300/69c/9cf/?text=3" alt="">
-        </div>
-      </div>
-    </div>
-    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-  </div>
-  </div>
 <section>
-
   <div class="parallax">
     <div class="row fifth-section">
       <div class="col-xs-12 col-md-6 prices-cards">
@@ -146,23 +131,48 @@
       </div>
     </div>
   </div>
+</section>
+
+<section>
+
+  <div class="carousel"
+    data-flickity='{ "freeScroll": true }'>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+  </div>
 
 </section>
 
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
+
 <style>
-  .parallax {
-    /* The image used */
-    background-image: url(<%= image_path 'parallax-pic.jpg'%>);
+.parallax {
+  /* The image used */
+  background-image: url(<%= image_path 'parallax-pic.jpg'%>);
 
-    /* Full height */
-    height: 100%;
+  /* Full height */
+  height: 100%;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
 
 

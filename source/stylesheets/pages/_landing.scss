@@ -70,6 +70,23 @@ span.underline {
  margin-top: 16px;
 }
 
+span.display-none {
+  display:none;
+}
+
+.display-none {
+  display:none;
+}
+
+
+span.displayed {
+  display:block;
+}
+
+.displayed {
+  display: flex;
+}
+
 .card-main {
   height: 40%;
   margin-top: 27vh;
@@ -202,36 +219,5 @@ span.underline {
 }
 
 
-// carousel
-.multi-item-carousel {
-  overflow: hidden;
-}
-.multi-item-carousel img {
-  height: auto;
-  width: 100%;
-}
-.multi-item-carousel .carousel-control.left,
-.multi-item-carousel .carousel-control.right {
-    background: rgba(255, 255, 255, 0.3);
-    width: 25%;
-}
-.multi-item-carousel .carousel-inner {
-  width: 150%;
-  left: -25%;
-}
-.carousel-inner > .item.next,
-.carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(33%, 0, 0);
-    transform: translate3d(33%, 0, 0);
-}
-.carousel-inner > .item.prev,
-.carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-33%, 0, 0);
-    transform: translate3d(-33%, 0, 0);
-}
-.item__third {
-  float: left;
-  width: 33.33333333%;
-}
 
 

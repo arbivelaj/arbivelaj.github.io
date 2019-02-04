@@ -216,30 +216,48 @@ a.cta {
 
 
 .carousel {
-  background: #EEE;
+  background: white;
+  height: 70vh;
+  padding: 40px;
 }
 
 .carousel-cell {
   width: 66%;
-  height: 200px;
+  height: 50vh;
   margin-right: 10px;
   background: #8C8;
   border-radius: 5px;
+  // display:flex;
   counter-increment: gallery-cell;
 }
 
 /* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
+// .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(gallery-cell);
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
 
 ol.flickity-page-dots {
   display: none;
+}
+
+.timeline-card-left {
+  width: 55%;
+  height:100%;
+
+}
+
+.timeline-card {
+  display: flex;
+  height: 100%;
+}
+
+.timeline-card-right {
+  background-color: grey;
 }
 
 

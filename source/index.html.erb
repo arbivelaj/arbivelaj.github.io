@@ -1,5 +1,5 @@
 <%= partial "fixed_navbar" %>
-<div class="row landing-sec">
+<div class="row landing-sec ">
   <div class="col-xs-12 col-md-6 left-text">
     <div class="left-header">
       <h1 class="main-title">Digital Literacy<br>Le Wagon <i class="highlighted highlighted-red">Milano</i></h1>
@@ -12,20 +12,70 @@
     </div>
 
   </div>
-  <div class="col-xs-12 col-md-6 right-pic pic" style="background-image: url(<%= image_path 'right-front.jpg'%>);">
+  <div class="col-xs-12 col-md-6 right-pic pic">
+    <img src="images/right-front.jpg" class="pic1" alt="" style=" border-radius: 5px;height: 80vh; width: 40vw; object-fit: cover;">
 
   </div>
 </div>
 
 <section>
+  <div class="row first-section">
+    <ul class="wrapper datatron">
+      <li>
+        <span>#1</span>
+        <i>Coding Bootcamp</i>
+        <p>Le Wagon has been ranked as the best coding school in the world for the last 3 years.</p>
+        <a class="cta-link" href="/program">
+          Discover our program
+          <svg class="carret" data-target="dropdown.carret" height="3" viewBox="0 0 8 3" width="8" xmlns="http://www.w3.org/2000/svg"><path d="m66.3706055 9 2.8516167 3 2.7777778-3" fill="none" stroke="#42464c" stroke-linecap="round" stroke-linejoin="round" transform="translate(-65 -9)"></path></svg>
+        </a>
+      </li>
+      <li>
+        <span>4170+</span>
+        <i>Amazing Graduates</i>
+        <p>We have bootcamps running in 32 cities around the world, creating an incredible alumni network.</p>
+        <a class="cta-link" href="/graduates">
+          Meet our graduates
+          <svg class="carret" data-target="dropdown.carret" height="3" viewBox="0 0 8 3" width="8" xmlns="http://www.w3.org/2000/svg"><path d="m66.3706055 9 2.8516167 3 2.7777778-3" fill="none" stroke="#42464c" stroke-linecap="round" stroke-linejoin="round" transform="translate(-65 -9)"></path></svg>
+        </a>
+      </li>
+      <li>
+        <span>1070+</span>
+        <i>Web Apps Developed</i>
+        <p>We teach our students to turn their ideas into reality. Come and build your  business with us!</p>
+        <a class="cta-link" href="/products">
+          See some student projects
+          <svg class="carret" data-target="dropdown.carret" height="3" viewBox="0 0 8 3" width="8" xmlns="http://www.w3.org/2000/svg"><path d="m66.3706055 9 2.8516167 3 2.7777778-3" fill="none" stroke="#42464c" stroke-linecap="round" stroke-linejoin="round" transform="translate(-65 -9)"></path></svg>
+        </a>
+      </li>
+    </ul>
+    <div  class="col-xs-12 col-md-6 right-section-pic-container">
+      <div class="pic right-section-pic" style="background-image: url(<%= image_path 'lear-best.jpg.png'%>);">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 right-text">
+      <p class="header-courses-section" style="font-size: 50px">Impara con i <i class="highlighted highlighted-red" style="font-size: 50px;">migliori</i></p>
+      <p class="fourth-section-paragraph">Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro. Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design</p>
+<!--       <ul class="data-list">
+        <li><strong>4170+</strong> graduates</li>
+        <li><strong>1070+</strong> products built</li>
+        <li><strong>230+</strong> startups launched</li>
+      </ul> -->
+    </div>
+  </div>
+</section>
+
+
+
+<section>
   <div class="row second-section">
-    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px;">Digital Literacy:</i>                          i nostri corsi</p>
+    <p class="header-courses-section"><i class="highlighted highlighted-purple" style="font-size: 50px;">Digital Literacy:</i>i nostri corsi</p>
     <div class="col-xs-12 col-sm-4 full-height">
       <div class="card-main">
         <div class="pic-course pic card-main1" style="background-image: url(<%= image_path 'web-dev.jpg'%>);">
           <p class="card-title-second-section">Web Development</p>
         </div>
-        <span class="underline display-none displayed"></span>
+        <span class="underline1 display-none displayed"></span>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 full-height">
@@ -33,7 +83,7 @@
         <div class="pic-course pic card-main2" style="background-image: url(<%= image_path 'Api.jpg'%>);">
           <p class="card-title-second-section">API</p>
         </div>
-        <span class="underline display-none"></span>
+        <span class="underline2 display-none"></span>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 full-height">
@@ -41,7 +91,7 @@
         <div class="pic-course pic card-main3" style="background-image: url(<%= image_path 'prod-sprint.jpg'%>);">
           <p class="card-title-second-section">Product Sprint</p>
         </div>
-        <span class="underline display-none"></span>
+        <span class="underline3 display-none"></span>
       </div>
     </div>
   </div>
@@ -51,32 +101,112 @@
 
 <section>
   <div class="Web row third-section course1 display-none displayed">
-    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">Web Development</i></p>
-    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
-
+    <p class="header-courses-section"><i class="highlighted highlighted-lightgreen" style="font-size: 50px; color: lightgreen;">Web Development</i></p>
+    <div class="course-desc-container">
+      <p>Tutti dovrebbero sapere come programmare un semplice <strong>sito</strong> e lanciarlo online! Durante questo corso, imparerete a programmare siti efficaci e veloci con <strong>HTML & CSS</strong>, lanciarli online e incorporare servizi di terze parti per raccogliere i dati degli utenti o integrare moduli di pagamenti.</p>
+      <p>Questo corso vi insegnerà tutti i fondamenti dello <strong>sviluppo web</strong>:</p>
+      <ul>
+        <li>Installa i principali strumenti di developing e impara a usarli per lavorare a un progetto web</li>
+        <li>Impara i concetti base dell’HTML & CSS e programma una pagina profilo con font e colori</li>
+        <li>Crea la tua libreria di componenti UI utilizzando le più recenti tecniche CSS come flexbox</li>
+        <li>Utilizza la libreria UI per codificare una pagina di destinazione per qualsiasi servizio o prodotto</li>
+        <li>Metti online la tua landing page, incorpora un servizio di terze parti e integra Google Analytics e configura il tuo dominio</li>
+      </ul>
     </div>
   </div>
 
   <div class="API row third-section display-none">
-    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">API</i></p>
-    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
+    <p class="header-courses-section"><i class="highlighted highlighted-orange" style="font-size: 50px; color: orange;">API</i></p>
+    <div class="course-desc-container">
+      <p>API sta per Application Programming Interface. Un'API viene utilizzata da uno sviluppatore per creare codice per interagire con un sistema di terze parti.
+       <p>Durante questo corso, inizierete imparando cosa sono le API e come usarle per costruire applicazioni più rapide ed efficienti, scoprirete il rapporto tra HTTP e le API e come sfruttare migliaia di SaaS, API e Webhook per prototipare un MVP senza una singola riga di codice.
+       </p>
+     </p>
+   </div>
 
-    </div>
+ </div>
+</div>
+
+<div class="Product row third-section display-none">
+  <p class="header-courses-section"><i class="highlighted highlighted-lightblue" style="font-size: 50px; color: lightblue;">Product Sprint</i></p>
+  <div class="course-desc-container">
+    <p>Questo corso vi insegnerà tutto ciò che vi serve sapere per iniziare con l’UX & UI Design:</p>
+    <ul>
+      <li>Definire i bisogni e gli obiettivi dell’utente e lavorare sul differenziatore del prodotto</li>
+      <li>Crea i tuoi profili UX e gli user journey del tuo prodotto</li>
+      <li>Trasponi gli user journey in user flow</li>
+      <li>Crea un Kit UI e usalo per il wireframing</li>
+      <li>Costruisci il tuo prototipo e verifica la validità del tuo prodotto con l’usability testing</li>
+      <li>Trasforma il tuo wireframing in un mockup aggiungengo font, icone, colori e immagini</li>
+      <li>Impara ad analizzare Google Analytics e gli in-page data per individuare problemi e reinventare il tuo design</li>
+    </ul>
   </div>
 
-  <div class="Product row third-section display-none">
-    <p class="header-courses-section"><i class="highlighted highlighted-red" style="font-size: 50px; color: black;">Product Sprint</i></p>
-    <div class="pic image-sec" style="background-image: url(<%= image_path 'web-dev-desc-jpg.png'%>);">
-
-    </div>
-  </div>
+</div>
+</div>
 </section>
+<section style="background-color: #FFF9EF;">
+  <div style="height: 20vh;">
+    <p class="header-timeline-section">La <i class="highlighted highlighted-purple" style="font-size: 50px;">giornata tipica</i>da Le Wagon</p>
+  </div>
+  <div class="carousel"
+  data-\='{ "freeScroll": true }'>
+  <div class="carousel-cell">
+    <div class="timeline-card">
+      <div class="timeline-card-left pic" style="background-image: url(<%= image_path 'lecture.jpg.png'%>);">
+      </div>
+      <div class="timeline-card-right">
+        <div class="timeline-card-right-text-container">
+          <span>Lezione<br><i>9:00AM - 10:30AM</i></span>
+          <p>La giornata comincia con una lezione di 90 min sulle nozioni teoriche fondamentali per poter capire ed riutlizzare le tecnologie usate a Le Wagon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell">
+    <div class="timeline-card">
+      <div class="timeline-card-left pic" style="background-image: url(<%= image_path 'challenges.jpg'%>);">
+      </div>
+      <div class="timeline-card-right">
+        <div class="timeline-card-right-text-container">
+          <span>Challenges<br><i>10.45AM - 5PM</i></span>
+          <p>Insieme ad un buddy, si lavora su esercizi e problemi di coding per mettere subito in pratica quanto appreso durante la lezione del mattino</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell">
+    <div class="timeline-card">
+      <div class="timeline-card-left pic" style="background-image: url(<%= image_path 'livecode.jpg'%>);">
+      </div>
+      <div class="timeline-card-right">
+        <div class="timeline-card-right-text-container">
+          <span>Livecode<br><i>5.15PM- 18.30PM</i></span>
+          <p>Un volontario tra i partecipanti prende la scena e, con l'aiuto di un teacher e di un tutor, risolve una challenge collaborando con gli altri studenti</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell">
+    <div class="timeline-card">
+      <div class="timeline-card-left pic" style="background-image: url(<%= image_path 'talk.jpg'%>);">
+      </div>
+      <div class="timeline-card-right">
+        <div class="timeline-card-right-text-container">
+          <span>Talks<br><i>9:00AM - 10:30AM</i></span>
+          <p>Fondatori di StartUp, lead developers di grandi aziende informatiche e project manager di web agencies milanesi di dividono il nostro palco per presentare i loro progetti e le loro aziende</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+</section>
 
 <section>
   <div class="row fourth-section">
-    <div  class="col-xs-12 col-md-6 right-section-pic-container">
-      <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+    <div  class="col-xs-12 col-md-6 right-section-pic-container right-section-pic-container-slack ">
+      <div class="pic right-section-pic right-section-pic-double" style="background-image: url(<%= image_path 'classe2.png'%>);">
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 right-text">
@@ -88,6 +218,7 @@
 </section>
 
 
+
 <section>
   <div class="row sixth-section">
     <div class="col-xs-12 col-sm-6 right-text">
@@ -95,8 +226,8 @@
       <p class="fourth-section-paragraph">Sviluppa tech skills essenziali nel job market,
       scopri lo UX/UI Design, Web Development, API, Database e molto altro. Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.Sviluppa tech skills essenziali nel job market, scopri lo UX/UI Design, Web Development, API, Database e molto altro.</p>
     </div>
-    <div  class="col-xs-12 col-md-6 right-section-pic-container">
-      <div class="pic right-section-pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
+    <div  class="col-xs-12 col-md-6 right-section-pic-container right-section-pic-container-slack">
+      <div class="pic right-section-pic right-section-pic-double" style="background-image: url(<%= image_path 'classe.png'%>);">
       </div>
     </div>
   </div>
@@ -108,93 +239,61 @@
       <div class="col-xs-12 col-md-6 prices-cards">
         <div class="price-card">
           <div class="content">
-            <div class="content-row content-row-title">
-              <div style="position: relative;
-              top: 50%;
-              transform: translateY(-50%); ">
-              <h3><i class="highlighted highlighted-red">1 Day</i> Program</h3>
-              <p>April 2019</p>
-              <p>8h full time</p>
+            <div class="content-row content-row-title content-row-title1">
+              <i class="fas fa-paper-plane" style="font-size: 60px; margin-top: 15px;"></i>
+              <div style="position: relative; top: 30%; transform: translateY(-50%); ">
+                <h3><i class="highlighted highlighted-red">1 Day</i> Program</h3>
+                <p style="letter-spacing: 4px; font-size: 16px;">8-h full-time</p>
+                <p><i class="highlighted highlighted-new">Aprile 2019</i></p>
+              </div>
             </div>
-          </div>
-          <div class="content-row content-row-early">
-            <div style="position: relative;
-            top: 50%;
-            transform: translateY(-50%); ">
-            <h3>EARLY BIRD</h3>
-            <p style="font-weight: 200;">fino al 01/01/2018</p>
-            <h2><i class="highlighted highlighted-red">100€</i></h2>
-          </div>
-          </div>
-          <div class="content-row content-row-price">
-            <div style="position: relative;
-            top: 50%;
-            transform: translateY(-50%); ">
-            <h3>FULL PRICE</h3>
-            <h2><i class="highlighted highlighted-red">150€</i></h2>
-          </div>
+            <div class="content-row content-row-early">
+              <div style="position: relative; top: 50%; transform: translateY(-50%); ">
+                <h3>EARLY BIRD</h3>
+                <p style="font-weight: 200; letter-spacing: 3px;font-size: 16px;">fino al 01/01/2018</p>
+                <h2><i class="highlighted highlighted-red">100€</i></h2>
+              </div>
+            </div>
+            <div class="content-row content-row-price">
+              <div style="position: relative; top: 50%; transform: translateY(-50%); ">
+                <h3>FULL PRICE</h3>
+                <h2><i class="highlighted highlighted-red">150€</i></h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-md-6 prices-cards">
+      <div class="col-xs-12 col-md-6 prices-cards">
         <div class="price-card">
           <div class="content">
-            <div class="content-row content-row-title">
-              <div style="position: relative;
-              top: 50%;
-              transform: translateY(-50%); ">
-              <h3>1 Day program</h3>
-              <p>April 2019</p>
-              <p>8h full time</p>
+            <div class="content-row content-row-title content-row-title1">
+              <i class="fas fa-rocket" style="font-size: 60px; margin-top: 15px;"></i>
+              <div style="position: relative; top: 30%; transform: translateY(-50%); ">
+                <h3><i class="highlighted highlighted-red">3-5 Day</i> Program</h3>
+                <p style="letter-spacing: 4px; font-size: 16px;">8-h full-time</p>
+                <p><i class="highlighted highlighted-new">Aprile 2019</i></p>
+              </div>
             </div>
-          </div>
-          <div class="content-row content-row-early">
-            <div style="position: relative;
-            top: 50%;
-            transform: translateY(-50%); ">
-            <h3>EARLY BIRD</h3>
-            <p>fino al 01/01/2018</p>
-            <h2>100€</h2>
-          </div>
-          </div>
-          <div class="content-row content-row-price">
-            <div style="position: relative;
-            top: 50%;
-            transform: translateY(-50%); ">
-            <h3>FULL PRICE</h3>
-            <h2>150€</h2>
-          </div>
+            <div class="content-row content-row-early">
+              <div style="position: relative; top: 50%; transform: translateY(-50%); ">
+                <h3>EARLY BIRD</h3>
+                <p style="font-weight: 200; letter-spacing: 3px;font-size: 16px;">fino al 01/01/2018</p>
+                <h2><i class="highlighted highlighted-red">100€</i></h2>
+              </div>
+            </div>
+            <div class="content-row content-row-price">
+              <div style="position: relative; top: 50%; transform: translateY(-50%); ">
+                <h3>FULL PRICE</h3>
+                <h2><i class="highlighted highlighted-red">150€</i></h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 
-<section>
-  <div style="height: 15vh;">
-  <p class="header-timeline-section"><i class="highlighted highlighted-red" style="font-size: 50px;">Digital Literacy:</i> i nostri corsi</p>
-  </div>
-  <div class="carousel"
-  data-\='{ "freeScroll": true }'>
-  <div class="carousel-cell">
-    <div class="timeline-card">
-      <div class="timeline-card-left pic" style="background-image: url(<%= image_path 'woman-cover.jpg'%>);">
-      </div>
-      <div class="timeline-card-right">
-        iao
-      </div>
-    </div>
-  </div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-</div>
-
-</section>
 
 <div class="footer">
   <div class="footer-links">
@@ -212,7 +311,7 @@
 <style>
 .parallax {
   /* The image used */
-  background-image: url(<%= image_path 'parallax-pic.jpg'%>);
+  background-image: url(<%= image_path 'parallax.jpg'%>);
 
   /* Full height */
   height: 100%;
